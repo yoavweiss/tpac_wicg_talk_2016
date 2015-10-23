@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <style id=inline>
+        @font-face {
+            font-family: 'Droid Serif';
+            src: url('fonts/droidserif-webfont.eot');
+            src: url('fonts/droidserif-webfont.eot?#iefix') format('embedded-opentype'),
+                 url('fonts/droidserif-webfont.woff2') format('woff2'),
+                 url('fonts/droidserif-webfont.woff') format('woff'),
+                 url('fonts/droidserif-webfont.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Ubuntu Mono';
+            src: url('fonts/ubuntumono-regular-webfont.eot');
+            src: url('fonts/ubuntumono-regular-webfont.eot?#iefix') format('embedded-opentype'),
+                 url('fonts/ubuntumono-regular-webfont.woff2') format('woff2'),
+                 url('fonts/ubuntumono-regular-webfont.woff') format('woff'),
+                 url('fonts/ubuntumono-regular-webfont.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Yanone Kaffeesatz';
+            src: url('fonts/yanonekaffeesatz-regular-webfont.eot');
+            src: url('fonts/yanonekaffeesatz-regular-webfont.eot?#iefix') format('embedded-opentype'),
+                 url('fonts/yanonekaffeesatz-regular-webfont.woff2') format('woff2'),
+                 url('fonts/yanonekaffeesatz-regular-webfont.woff') format('woff'),
+                 url('fonts/yanonekaffeesatz-regular-webfont.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+
+        }
+        body { font-family: 'Droid Serif'; }
+        h1, h2, h3 {
+          font-family: 'Yanone Kaffeesatz';
+          font-weight: normal;
+        }
+        img {max-width: 100%; }
+        .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+        .remark-code {font-size: 1.5em; }
+        a {font-size: 1.5em; }
+        a:visited {color: blue;}
+
+        .bright h1, .bright h2, .bright a, p.bright { background-color: rgba(200, 200, 200, 0.7); }
+        .remark-slide-content h2 {font-size: 4em; }
+        .remark-slide-content h1 {font-size: 6em; }
+        .remark-slide>.nocenter { text-align: left; }
+        .wordwrap {word-wrap: break-word;}
+        table { width: 100%; border-collapse: collapse}
+        tr, td, th { border: 1px solid #ddd; border-spacing: 0;}
+        thead tr, th { border: 2px solid #111; }
+        tbody>tr:nth-of-type(odd) { background-color: #eee; }
+        ul { list-style-type: none; }
+        li {font-size: 1.5em; }
+    </style>
+    <script>
+        // JS hack because the class system in remark is not very flexible...
+        window.onload = function() {
+            [].forEach.call(document.querySelectorAll(".top"), function(el) {
+                var classes = el.className;
+                var middle = classes.indexOf("middle");
+                if (middle != -1) {
+                    el.className = classes.substring(0, middle) + classes.substring(middle + 6);
+                }
+            });
+        };
+    </script>
+  </head>
+  <body>
+    <textarea id="source">
+layout: true
+class: center, middle, bright
+---
+# WICG
+
+---
+## The problem
+---
+## The Web is huge!
+---
+## Billions of users
+---
+## Millions of developers
+---
+## We're outnumbered!!!
+---
+## We can't know everything
+---
+## current model
+---
+## Problem statement
+---
+## Specification
+---
+## Implementation
+---
+<!-- Ta da -->
+---
+<!-- Broken bridge -->
+---
+## Tragedy of the commons
+---
+# So, Extensible Web
+---
+## Low level APIs
+---
+## Less assumptions about needs
+---
+## Better wheels
+---
+## Not for everyone
+---
+## Has costs
+---
+## Reduces usage
+---
+# Baking stuff in
+---
+## We need better process
+---
+## Get customers involved
+---
+## Fresh blood
+---
+## Get more companies involved
+---
+# WICG
+---
+## Bring your proposals
+---
+## Get early feedback
+---
+## Everyone wins
+---
+## Thanks!
+
+
+    </textarea>
+    <script src="remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>
